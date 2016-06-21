@@ -6,8 +6,8 @@
 /wng_db
 /webapps/
 /classes/
-/*.log
-/*.log.*
+*.log
+*.log.*
 /html/doc/*
 /html/**/*.gz
 /keystore
@@ -15,7 +15,7 @@
 /wngservice.jar
 /wng_test_db
 /README_win.txt
-/wng.log.lck
+wng.log.lck
 /bin
 /.classpath
 /.project
@@ -34,3 +34,5 @@ deploy.sh
 *.patch
 /addons/classes/
 /addons/src/*.java
+wng.properties
+wng.log
