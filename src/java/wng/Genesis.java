@@ -26,7 +26,7 @@ public final class Genesis {
     };
 
     public static final long[] GENESIS_RECIPIENTS = {
-            Long.parseUnsignedLong("86054862929115313")
+            Long.parseUnsignedLong("75963601147116201")
     };
 
 
