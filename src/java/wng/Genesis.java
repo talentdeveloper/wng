@@ -15,13 +15,14 @@
  ******************************************************************************/
 
 package wng;
+import java.math.BigInteger;
 
 public final class Genesis {
 
-    public static final long GENESIS_BLOCK_ID = 1L;
+    public static final long GENESIS_BLOCK_ID = new BigInteger("12598053463077161409").longValue();
     public static final long CREATOR_ID = 23680010882730923L;
     public static final byte[] CREATOR_PUBLIC_KEY = {
-            -38, 38, 98, -113, -31, -53, -52, -7, 79, -87, -48, 85, 110, -4, -87, -95, 
+            -38, 38, 98, -113, -31, -53, -52, -7, 79, -87, -48, 85, 110, -4, -87, -95,
             116, 123, 59, 37, 82, -14, -76, -69, 119, -39, -49, 121, -102, 102, -86, 1
     };
 
