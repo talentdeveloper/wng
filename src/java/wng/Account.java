@@ -1205,6 +1205,7 @@ public final class Account {
             }
         }
         if (height < Constants.TRANSPARENT_FORGING_BLOCK_3) {
+            Arrays.sort(Genesis.GENESIS_RECIPIENTS);
             if (Arrays.binarySearch(Genesis.GENESIS_RECIPIENTS, id) >= 0) {
                 return balanceNQT / Constants.ONE_WNG;
             }

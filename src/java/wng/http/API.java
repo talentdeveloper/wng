@@ -225,7 +225,9 @@ public final class API {
             gzipHandler.setMinGzipSize(wng.peer.Peers.MIN_COMPRESS_SIZE);
             apiHandler.setGzipHandler(gzipHandler);
 
-            apiHandler.addServlet(APITestServlet.class, "/test");
+            if (Wng.getBooleanProperty("wng.enableApiTestUI")) {
+              apiHandler.addServlet(APITestServlet.class, "/test");
+            }
 
             apiHandler.addServlet(DbShellServlet.class, "/dbshell");
 

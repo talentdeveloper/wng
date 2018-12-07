@@ -394,6 +394,12 @@ public final class Wng {
                     Logger.logMessage("Client UI is at " + API.getWelcomePageUri());
                 }
                 setServerStatus(ServerStatus.STARTED, API.getWelcomePageUri());
+
+                String forgerSecretPhrase = Wng.getStringProperty("wng.forgerSecretPhrase");
+                if (forgerSecretPhrase != null && forgerSecretPhrase != "") {
+                  Generator.startForging(forgerSecretPhrase);
+                }
+
                 if (isDesktopApplicationEnabled()) {
                     launchDesktopApplication();
                 }
